@@ -1,0 +1,25 @@
+# Client Task A #
+# Add your pseudocode to this file below this line: #
+# ------------------------------------------------- #
+Initialize the game
+SET random_number TO random value between 1 and 10
+SET max_attempts TO 3
+SET attempts TO 0
+Loop for player guesses
+WHILE attempts < max_attempts DO
+PROMPT player to guess a number between 1 and 10
+READ player_guess
+IF player_guess is equal to random_number THEN
+PRINT "Congratulations! You guessed the correct number!"
+EXIT the loop
+ELSE IF player_guess is less than random_number THEN
+PRINT "Too low! Try again."
+ELSE
+PRINT "Too high! Try again."
+END IF
+INCREMENT attempts by 1
+Check if player has used all attempts
+IF attempts is equal to max_attempts THEN
+PRINT "Game over! The correct number was " + random_number
+END IF
+END
