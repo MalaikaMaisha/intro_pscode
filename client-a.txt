@@ -5,7 +5,7 @@ Initialize the game
 SET random_number TO random value between 1 and 10
 SET max_attempts TO 3
 SET attempts TO 0
-#Loop for player guesses
+Loop for player guesses
 WHILE attempts < max_attempts DO
 PROMPT player to guess a number between 1 and 10
 READ player_guess
