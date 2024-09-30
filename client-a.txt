@@ -1,7 +1,7 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
-# Initialize the game
+Initialize the game
 SET random_number TO random value between 1 and 10
 SET max_attempts TO 3
 SET attempts TO 0
@@ -18,8 +18,8 @@ ELSE
 PRINT "Too high! Try again."
 END IF
 INCREMENT attempts by 1
-# Check if player has used all attempts
+Check if player has used all attempts
 IF attempts is equal to max_attempts THEN
 PRINT "Game over! The correct number was " + random_number
 END IF
-#END
+END
