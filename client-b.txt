@@ -1,4 +1,30 @@
 # Client Task B #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
-
+Start at the entrance of Warehouse
+Grid ['#', '#', '#', '#', '#'],
+    ['#', '#', '#', '#', '#'],
+    ['#', '#', 'C', '#', '#'],
+    ['#', '#', '#', '#', '#'],
+    ['#', 'E', '#', '#', '#']
+Set directions "north": (-1, 0),
+    "south": (1, 0),
+    "east": (0, 1),
+    "west": (0, -1)
+Set customer position (E) (4, 1)
+Set concession position (C) (2, 2)
+PRINT "You are at position " + customer_position
+PROMPT customer to enter a direction (north, south, east , west) 
+READ direction_input
+IF direction_input in directions:
+SET new_row TO customer_position.row + directions[direction_input]
+SET new_col TO customer_position.col + directions[direction_input]
+SET customer_position
+IF customer_position.row < concession_position.row:
+PRINT "Move north to get closer to the concession area."
+IF customer_position.row > concession_position.row:
+PRINT "Move south to get closer to the concession area."
+IF customer_position.col < concession_position.col:
+PRINT "Move east to get closer to the concession area."
+IF customer_position.col > concession_position.col:
+PRINT "Move west to get closer to the concession area."
