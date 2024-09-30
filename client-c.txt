@@ -1,4 +1,6 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
-
+nums = range (50)
+for i in range(2, 50, 2):
+print (i)
